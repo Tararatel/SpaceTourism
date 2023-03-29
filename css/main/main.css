@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	max-width: 1440px;
+	margin: 0 auto;
+	background: url('../../img/background-desktop.png') no-repeat center;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+header {
+	margin-bottom: 251px;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+	position: relative;
+}
+
+.header__wrapper img {
+	margin-left: 55px;
+}
+
+.header__wrapper__line {
+	position: absolute;
+	left: 167px;
+	z-index: 1;
+	width: 473px;
+	height: 1px;
+	background: #ffffff;
+	mix-blend-mode: normal;
+	opacity: 0.25;
+}
+
+.header__wrapper__burger {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: none;
+}
+
+.header__wrapper__navigation {
+	width: 830px;
+	height: 96px;
+	background: rgba(255, 255, 255, 0.04);
+	backdrop-filter: blur(40.7742px);
+	padding-left: 123px;
+	display: flex;
+	align-items: center;
+	gap: 48px;
+}
+
+.header__wrapper__navigation button {
+	width: 19px;
+	height: 19px;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+
+.links a {
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 2.7px;
+	color: #ffffff;
+	padding-bottom: 35px;
+	margin-top: 35px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+span {
+	font-weight: 700;
+	margin-right: 12px;
+}
+
+.links a:hover {
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+	mix-blend-mode: normal;
+}
+
+.links a:focus {
+	border-bottom: 3px solid #fff;
+	outline: none;
+}
+
+main {
+	margin-bottom: 131px;
+}
+
+.main__wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 386px;
+}
+
+.main__wrapper__text {
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.main__wrapper__text h3 {
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 34px;
+	letter-spacing: 4.725px;
+	color: #d0d6f9;
+}
+
+.main__wrapper__text h1 {
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 150px;
+	line-height: 172px;
+	color: #ffffff;
+}
+
+.main__wrapper__text p {
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: #d0d6f9;
+}
+
+.main__wrapper__explore {
+	width: 274px;
+	height: 274px;
+	cursor: pointer;
+	background: #ffffff;
+	border-radius: 50%;
+	margin-top: 108px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	letter-spacing: 2px;
+	color: #0b0d17;
+}
+
+.main__wrapper__explore-hover {
+	mix-blend-mode: normal;
+	opacity: 0.1;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	display: none;
+	animation: scale-animation 1s linear infinite alternate;
+}
+
+.main__wrapper__explore:hover .main__wrapper__explore-hover {
+	display: block;
+}
+
+@keyframes scale-animation {
+	from {
+		width: 274px;
+		height: 274px;
+	}
+
+	to {
+		width: 450px;
+		height: 450px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		max-width: 768px;
+		background: url('../../img/background-tablet.png') no-repeat center;
+	}
+
+	header {
+		margin-bottom: 106px;
+	}
+
+	.header__wrapper {
+		margin-top: 0;
+	}
+
+	.header__wrapper img {
+		margin-left: 39px;
+	}
+
+	.header__wrapper__line {
+		display: none;
+	}
+
+	.header__wrapper__navigation {
+		width: 450px;
+		padding-left: 0;
+		gap: 37px;
+		justify-content: center;
+	}
+
+	.links a {
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 2.3625px;
+	}
+
+	span {
+		display: none;
+	}
+
+	main {
+		margin-bottom: 90px;
+	}
+
+	.main__wrapper {
+		flex-direction: column;
+		align-items: center;
+		gap: 156px;
+	}
+
+	.main__wrapper__text {
+		text-align: center;
+	}
+
+	.main__wrapper__text h3 {
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 3.375px;
+	}
+
+	.main__wrapper__text h1 {
+		line-height: 150px;
+	}
+
+	.main__wrapper__text p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.main__wrapper__explore {
+		width: 242px;
+		height: 242px;
+		margin-top: 0;
+	}
+
+	@keyframes scale-animation {
+		from {
+			width: 242px;
+			height: 242px;
+		}
+
+		to {
+			width: 350px;
+			height: 350px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		max-width: 375px;
+		background: url('../../img/background-mobile.png') no-repeat center;
+	}
+
+	header {
+		margin-bottom: 48px;
+	}
+
+	.header__wrapper {
+		margin: 24px 24px 0 24px;
+	}
+
+	.header__wrapper__burger {
+		display: block;
+	}
+
+	.header__wrapper img {
+		margin-left: 0;
+		width: 40px;
+	}
+
+	.header__wrapper__navigation {
+		width: 254px;
+		height: 667px;
+
+		top: -24px;
+		right: -24px;
+
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-start;
+
+		padding-left: 32px;
+		gap: 32px;
+		position: absolute;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.header__wrapper__navigation button {
+		display: block;
+		margin: 34px 27px 33px 0;
+	}
+
+	.links a {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 2.7px;
+
+		padding-bottom: 0;
+		margin-top: 0;
+		width: 222px;
+		border-bottom: none;
+		border-right: 4px solid rgba(0, 0, 0, 0);
+	}
+
+	.links a:hover {
+		border-bottom: none;
+		border-right: 4px solid #fff;
+	}
+
+	span {
+		display: inline-block;
+	}
+
+	main {
+		margin-bottom: 48px;
+	}
+
+	.main__wrapper {
+		gap: 81px;
+	}
+
+	.main__wrapper__text {
+		width: 327px;
+		gap: 16px;
+	}
+
+	.main__wrapper__text h3 {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 2.7px;
+	}
+
+	.main__wrapper__text h1 {
+		font-size: 80px;
+		line-height: 100px;
+	}
+
+	.main__wrapper__text p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.main__wrapper__explore {
+		width: 150px;
+		height: 150px;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: 1.25px;
+	}
+
+	@keyframes scale-animation {
+		from {
+			width: 150px;
+			height: 150px;
+		}
+
+		to {
+			width: 230px;
+			height: 230px;
+		}
+	}
+}
