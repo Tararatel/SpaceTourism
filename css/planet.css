@@ -1,7 +1,5 @@
-/* @import url('../main.css'); */
-
 body {
-	background: url('../../img/background-moon.png') no-repeat center;
+	background: url('../img/planets/background-moon.webp') no-repeat center;
 }
 
 header {
@@ -125,7 +123,7 @@ main {
 
 @media (max-width: 768px) {
 	body {
-		background: url('../../img/background-moon-tablet.png') no-repeat center;
+		background: url('../img/planets/background-moon-tablet.webp') no-repeat center;
 	}
 
 	header {
@@ -195,7 +193,7 @@ main {
 
 @media (max-width: 375px) {
 	body {
-		background: url('../../img/background-moon-mobile.png') no-repeat center;
+		background: url('../img/planets/background-moon-mobile.webp') no-repeat center;
 	}
 
 	header {

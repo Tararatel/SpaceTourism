@@ -12,7 +12,7 @@ body {
 	text-rendering: optimizeSpeed;
 	max-width: 1440px;
 	margin: 0 auto;
-	background: url('../../img/background-desktop.png') no-repeat center;
+	background: url('../img/background-desktop.webp') no-repeat center;
 }
 
 img {
@@ -87,6 +87,7 @@ header {
 	padding-bottom: 35px;
 	margin-top: 35px;
 	border-bottom: 3px solid rgba(0, 0, 0, 0);
+	transition: 0.5s ease all;
 }
 
 span {
@@ -97,6 +98,7 @@ span {
 .links a:hover {
 	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 	mix-blend-mode: normal;
+	transition: 0.5s ease all;
 }
 
 .links a:focus {
@@ -198,7 +200,7 @@ main {
 @media (max-width: 768px) {
 	body {
 		max-width: 768px;
-		background: url('../../img/background-tablet.png') no-repeat center;
+		background: url('../img/background-tablet.webp') no-repeat center;
 	}
 
 	header {
@@ -285,7 +287,7 @@ main {
 @media (max-width: 375px) {
 	body {
 		max-width: 375px;
-		background: url('../../img/background-mobile.png') no-repeat center;
+		background: url('../img/background-mobile.webp') no-repeat center;
 	}
 
 	header {
@@ -307,7 +309,7 @@ main {
 
 	.header__wrapper__navigation {
 		width: 254px;
-		height: 667px;
+		height: 100vh;
 
 		top: -24px;
 		right: -24px;
@@ -319,6 +321,7 @@ main {
 		padding-left: 32px;
 		gap: 32px;
 		position: absolute;
+		z-index: 1;
 	}
 
 	.hidden {
