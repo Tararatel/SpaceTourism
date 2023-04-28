@@ -20,6 +20,10 @@ img {
 	max-width: 100%;
 }
 
+.hide-title {
+	display: none;
+}
+
 header {
 	margin-bottom: 251px;
 }
