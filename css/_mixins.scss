@@ -1,0 +1,25 @@
+@import 'vars';
+
+@mixin flexCenter($alignItems) {
+	display: flex;
+	justify-content: center;
+	align-items: $alignItems;
+}
+
+@mixin flexSpaceBetween($alignItems) {
+	display: flex;
+	justify-content: space-between;
+	align-items: $alignItems;
+}
+
+@mixin flexColumn() {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin resetButton() {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+
+body {
+	max-width: $desktop;
+	background: url('../img/background-desktop.webp') no-repeat center;
+}
+
+.header {
+	margin-bottom: 251px;
+
+	&__wrapper {
+		@include flexSpaceBetween($alignItems);
+		margin-top: 40px;
+		position: relative;
+
+		&__logo {
+			margin-left: 55px;
+		}
+
+		&__line {
+			position: absolute;
+			left: 167px;
+			z-index: 1;
+			width: 473px;
+			height: 1px;
+			background: #ffffff;
+			mix-blend-mode: normal;
+			opacity: 0.25;
+		}
+
+		&__burger {
+			@include resetButton();
+			display: none;
+		}
+
+		&__navigation {
+			@include flexCenter($alignItems);
+			width: 830px;
+			height: 96px;
+			background: rgba(255, 255, 255, 0.04);
+			backdrop-filter: blur(40.7742px);
+			padding-left: 123px;
+			gap: 48px;
+
+			button {
+				@include resetButton();
+				display: none;
+				width: 19px;
+				height: 19px;
+			}
+		}
+	}
+}
+
+.links a {
+	font-family: 'Barlow Condensed';
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 2.7px;
+	color: #ffffff;
+	padding-bottom: 35px;
+	margin-top: 35px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
+	transition: 0.5s ease all;
+}
+
+span {
+	font-weight: 700;
+	margin-right: 12px;
+}
+
+.links a:hover {
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+	mix-blend-mode: normal;
+	transition: 0.5s ease all;
+}
+
+.links a:focus {
+	border-bottom: 3px solid #fff;
+	outline: none;
+}
+
+.main {
+	margin-bottom: 131px;
+
+	&__wrapper {
+		@include flexCenter($alignItems);
+		gap: 386px;
+
+		&__description {
+			@include flexColumn();
+			width: 450px;
+			gap: 24px;
+
+			&--subtitle {
+				font-family: 'Barlow Condensed';
+				font-size: 28px;
+				line-height: 34px;
+				letter-spacing: 4.725px;
+				color: $subtitleColor;
+			}
+
+			&--title {
+				font-family: 'Bellefair';
+				font-size: 150px;
+				line-height: 172px;
+				color: $titleColor;
+			}
+
+			&--text {
+				font-family: 'Barlow';
+				font-size: 18px;
+				line-height: 32px;
+				color: $subtitleColor;
+			}
+		}
+
+		&__explore {
+			@include resetButton();
+			@include flexCenter($alignItems);
+			background: #ffffff;
+			width: 274px;
+			height: 274px;
+			border-radius: 50%;
+			margin-top: 108px;
+			font-family: 'Bellefair';
+			font-size: 32px;
+			line-height: 37px;
+			letter-spacing: 2px;
+			color: $btnColor;
+		}
+
+		&__explore-hover {
+			mix-blend-mode: normal;
+			opacity: 0.1;
+			background-color: #ffffff;
+			border-radius: 50%;
+			position: absolute;
+			display: none;
+			animation: scale-animation 1s linear infinite alternate;
+		}
+
+		&__explore:hover {
+			.main__wrapper__explore-hover {
+				display: block;
+			}
+		}
+	}
+}
+
+@keyframes scale-animation {
+	from {
+		width: 274px;
+		height: 274px;
+	}
+
+	to {
+		width: 450px;
+		height: 450px;
+	}
+}
+
+@import 'mainTablet';
+@import 'mainMobile';

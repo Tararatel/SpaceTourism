@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+	body {
+		max-width: 768px;
+		background: url('../img/background-tablet.webp') no-repeat center;
+	}
+
+	.header {
+		margin-bottom: 106px;
+
+		&__wrapper {
+			margin-top: 0;
+
+			&__logo {
+				margin-left: 39px;
+			}
+
+			&__line {
+				display: none;
+			}
+
+			&__navigation {
+				width: 450px;
+				padding-left: 0;
+				gap: 37px;
+			}
+		}
+	}
+
+	.links a {
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 2.3625px;
+	}
+
+	span {
+		display: none;
+	}
+
+	.main {
+		margin-bottom: 90px;
+
+		&__wrapper {
+			flex-direction: column;
+			gap: 156px;
+
+			&__description {
+				text-align: center;
+
+				&--subtitle {
+					font-size: 20px;
+					line-height: 24px;
+					letter-spacing: 3.375px;
+				}
+
+				&--title {
+					line-height: 150px;
+				}
+
+				&--text {
+					font-size: 16px;
+					line-height: 28px;
+				}
+			}
+
+			&__explore {
+				width: 242px;
+				height: 242px;
+				margin-top: 0;
+			}
+		}
+	}
+
+	@keyframes scale-animation {
+		from {
+			width: 242px;
+			height: 242px;
+		}
+
+		to {
+			width: 350px;
+			height: 350px;
+		}
+	}
+}
