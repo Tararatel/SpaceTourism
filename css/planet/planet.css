@@ -1,0 +1,209 @@
+body {
+  background: url("../../img/planets/background-moon.webp") no-repeat center;
+}
+
+header {
+  margin-bottom: 76px;
+}
+
+main {
+  margin-bottom: 112px;
+}
+main .destination-title {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 166px;
+  margin-bottom: 64px;
+}
+main .destination-title span {
+  font-weight: 700;
+  opacity: 0.25;
+  mix-blend-mode: normal;
+  margin-right: 28px;
+}
+main .planet {
+  display: flex;
+  margin-left: 230px;
+  gap: 157px;
+}
+main .planet img {
+  margin-top: 33px;
+}
+main .planet__wrapper {
+  width: 445px;
+}
+main .planet__wrapper__navigation {
+  margin-bottom: 37px;
+  display: flex;
+  gap: 35px;
+}
+main .planet__wrapper__navigation.links a {
+  color: #d0d6f9;
+  padding-bottom: 12px;
+  margin-top: 0;
+}
+main .planet__wrapper .links .active {
+  border-bottom: 3px solid #fff;
+}
+main .planet__wrapper .links .active:hover {
+  border-bottom: 3px solid #fff;
+}
+main .planet__wrapper__content h1 {
+  font-family: "Bellefair";
+  font-size: 100px;
+  line-height: 115px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+main .planet__wrapper__content p {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  padding-bottom: 54px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #383b4b;
+}
+main .planet__wrapper__facts {
+  display: flex;
+  gap: 79px;
+}
+main .planet__wrapper__facts__1, main .planet__wrapper__facts__2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main .planet__wrapper__facts__1 h4, main .planet__wrapper__facts__2 h4 {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+main .planet__wrapper__facts__1 p, main .planet__wrapper__facts__2 p {
+  font-family: "Bellefair";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url("../../img/planets/background-moon-tablet.webp") no-repeat center;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  main {
+    margin-bottom: 62px;
+  }
+  main .destination-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-left: 38px;
+    margin-bottom: 60px;
+  }
+  main .destination-title span {
+    display: inline;
+    margin-right: 19px;
+  }
+  main .planet {
+    margin-left: 0;
+    gap: 53px;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .planet img {
+    margin-top: 0;
+    width: 300px;
+  }
+  main .planet__wrapper {
+    width: 573px;
+  }
+  main .planet__wrapper__navigation {
+    margin-bottom: 32px;
+    gap: 35px;
+    justify-content: center;
+  }
+  main .planet__wrapper__content {
+    text-align: center;
+  }
+  main .planet__wrapper__content h1 {
+    font-size: 80px;
+    line-height: 92px;
+    margin-bottom: 8px;
+  }
+  main .planet__wrapper__content p {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 49px;
+  }
+  main .planet__wrapper__facts {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background: url("../../img/planets/background-moon-mobile.webp") no-repeat center;
+  }
+  header {
+    margin-bottom: 24px;
+  }
+  main {
+    margin-bottom: 58px;
+  }
+  main .destination-title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  main .planet {
+    gap: 26px;
+  }
+  main .planet img {
+    width: 170px;
+  }
+  main .planet__wrapper {
+    width: 327px;
+  }
+  main .planet__wrapper__navigation {
+    margin-bottom: 20px;
+    gap: 26px;
+  }
+  main .planet__wrapper__navigation a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    width: auto;
+    border-right: none;
+  }
+  main .planet__wrapper__navigation a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+  }
+  main .planet__wrapper__content h1 {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 1px;
+  }
+  main .planet__wrapper__content p {
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 32px;
+  }
+  main .planet__wrapper__facts {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
