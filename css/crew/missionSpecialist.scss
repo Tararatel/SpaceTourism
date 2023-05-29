@@ -1,0 +1,25 @@
+.crew__wrapper__img {
+	margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+	.crew__wrapper {
+		&__img {
+			margin-top: 0;
+		}
+
+		&__content__description {
+			width: 520px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	main {
+		margin-bottom: 79px;
+
+		.crew__wrapper__content__description {
+			width: 327px;
+		}
+	}
+}
