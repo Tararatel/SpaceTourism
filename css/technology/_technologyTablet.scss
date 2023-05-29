@@ -1,0 +1,77 @@
+@media (max-width: 768px) {
+	body {
+		background: url('../../img/technology/background-technology-tablet.png') no-repeat center;
+	}
+
+	header {
+		margin-bottom: 40px;
+	}
+
+	main {
+		margin-bottom: 97px;
+
+		.technology__title {
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 3.375px;
+			margin-left: 38px;
+			margin-bottom: 60px;
+
+			span {
+				display: inline-block;
+				margin-right: 16px;
+			}
+		}
+
+		.technology__wrapper {
+			flex-direction: column;
+			justify-content: flex-start;
+
+			&__links {
+				flex-direction: row;
+				gap: 16px;
+				margin-right: 0;
+				margin-bottom: 44px;
+
+				&__link {
+					width: 60px;
+					height: 60px;
+					font-size: 24px;
+					line-height: 28px;
+					letter-spacing: 1.5px;
+				}
+			}
+
+			&__content {
+				text-align: center;
+				margin-right: 0;
+				max-width: 458px;
+
+				&__terminology {
+					margin-bottom: 16px;
+				}
+
+				&__title {
+					font-size: 40px;
+					line-height: 46px;
+					margin-bottom: 16px;
+				}
+
+				&__text {
+					width: 458px;
+					font-size: 16px;
+					line-height: 28px;
+				}
+			}
+
+			&__img_tablet {
+				display: block;
+				margin-bottom: 56px;
+			}
+
+			&__img {
+				display: none;
+			}
+		}
+	}
+}

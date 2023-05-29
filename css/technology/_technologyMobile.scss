@@ -1,0 +1,64 @@
+@media (max-width: 375px) {
+	body {
+		background: url('../../img/technology/background-technology-mobile.png') no-repeat center;
+	}
+
+	header {
+		margin-bottom: 24px;
+	}
+
+	main {
+		margin-bottom: 81px;
+
+		.technology__title {
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 2.7px;
+			text-align: center;
+			margin-left: 0;
+			margin-bottom: 32px;
+		}
+
+		.technology__wrapper {
+			&__links {
+				margin-bottom: 26px;
+
+				&__link {
+					width: 40px;
+					height: 40px;
+					font-size: 16px;
+					line-height: 18px;
+					letter-spacing: 1px;
+				}
+			}
+
+			&__content {
+				max-width: 327px;
+
+				&__terminology {
+					font-size: 14px;
+					line-height: 17px;
+					letter-spacing: 2.3625px;
+					margin-bottom: 9px;
+				}
+
+				&__title {
+					font-size: 24px;
+					line-height: 28px;
+				}
+
+				&__text {
+					width: 327px;
+					font-size: 15px;
+					line-height: 25px;
+				}
+			}
+
+			&__img_tablet {
+				margin-bottom: 34px;
+				height: 170px;
+				object-fit: cover;
+			}
+		}
+	}
+}

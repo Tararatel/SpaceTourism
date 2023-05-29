@@ -19,13 +19,11 @@ main .crew__wrapper__content {
 }
 main .crew__wrapper__content__title {
   font-family: "Barlow Condensed";
-  font-style: normal;
-  font-weight: 400;
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 4.725px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   margin-left: 165px;
   margin-bottom: -34px;
 }
@@ -37,30 +35,24 @@ main .crew__wrapper__content__title span {
 }
 main .crew__wrapper__content__rank {
   font-family: "Bellefair";
-  font-style: normal;
-  font-weight: 400;
   font-size: 32px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-bottom: 15px;
 }
 main .crew__wrapper__content__name {
   font-family: "Bellefair";
-  font-style: normal;
-  font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 27px;
 }
 main .crew__wrapper__content__description {
   font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #d0d6f9;
@@ -75,7 +67,7 @@ main .crew__wrapper__content__navigation .round {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #fff;
   mix-blend-mode: normal;
   opacity: 0.17;
   transition: 0.5s ease all;

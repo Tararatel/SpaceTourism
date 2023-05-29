@@ -1,0 +1,100 @@
+@import '../helpers/vars';
+@import '../helpers/mixins';
+
+body {
+	background: url('../../img/technology/background-technology.webp') no-repeat center;
+}
+
+header {
+	margin-bottom: 76px;
+}
+
+main {
+	margin-bottom: 101px;
+
+	.technology__title {
+		font-family: 'Barlow Condensed';
+		font-size: 28px;
+		line-height: 34px;
+		letter-spacing: 4.725px;
+		color: $titleColor;
+		margin-bottom: 26px;
+		margin-left: 166px;
+
+		span {
+			opacity: 0.25;
+			margin-right: 24px;
+		}
+	}
+
+	.technology__wrapper {
+		@include flexCenter($alignItems);
+
+		&__img_tablet {
+			display: none;
+		}
+
+		&__links {
+			@include flexColumn();
+			gap: 32px;
+			margin-right: 80px;
+
+			&__link {
+				@include flexCenter($alignItems);
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				border: 1px solid rgba(255, 255, 255, 0.25);
+				font-family: 'Bellefair';
+				font-size: 32px;
+				line-height: 37px;
+				letter-spacing: 2px;
+				color: $titleColor;
+
+				&:hover {
+					border: 1px solid rgba(255, 255, 255, 1);
+				}
+
+				&_active {
+					color: $btnColor;
+					background: $titleColor;
+					border: none;
+				}
+			}
+		}
+
+		&__content {
+			margin-right: 130px;
+			max-width: 470px;
+
+			&__terminology {
+				font-family: 'Barlow Condensed';
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 2.7px;
+				color: $subtitleColor;
+				margin-bottom: 11px;
+			}
+
+			&__title {
+				font-family: 'Bellefair';
+				font-size: 56px;
+				line-height: 64px;
+
+				color: $titleColor;
+				margin-bottom: 17px;
+			}
+
+			&__text {
+				width: 444px;
+				font-family: 'Barlow';
+				font-size: 18px;
+				line-height: 32px;
+				color: $subtitleColor;
+			}
+		}
+	}
+}
+
+@import 'technologyTablet';
+@import 'technologyMobile';

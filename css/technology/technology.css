@@ -1,0 +1,203 @@
+body {
+  background: url("../../img/technology/background-technology.webp") no-repeat center;
+}
+
+header {
+  margin-bottom: 76px;
+}
+
+main {
+  margin-bottom: 101px;
+}
+main .technology__title {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #fff;
+  margin-bottom: 26px;
+  margin-left: 166px;
+}
+main .technology__title span {
+  opacity: 0.25;
+  margin-right: 24px;
+}
+main .technology__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .technology__wrapper__img_tablet {
+  display: none;
+}
+main .technology__wrapper__links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-right: 80px;
+}
+main .technology__wrapper__links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: "Bellefair";
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+main .technology__wrapper__links__link:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+main .technology__wrapper__links__link_active {
+  color: #0b0d17;
+  background: #fff;
+  border: none;
+}
+main .technology__wrapper__content {
+  margin-right: 130px;
+  max-width: 470px;
+}
+main .technology__wrapper__content__terminology {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  margin-bottom: 11px;
+}
+main .technology__wrapper__content__title {
+  font-family: "Bellefair";
+  font-size: 56px;
+  line-height: 64px;
+  color: #fff;
+  margin-bottom: 17px;
+}
+main .technology__wrapper__content__text {
+  width: 444px;
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url("../../img/technology/background-technology-tablet.png") no-repeat center;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  main {
+    margin-bottom: 97px;
+  }
+  main .technology__title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    margin-left: 38px;
+    margin-bottom: 60px;
+  }
+  main .technology__title span {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  main .technology__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  main .technology__wrapper__links {
+    flex-direction: row;
+    gap: 16px;
+    margin-right: 0;
+    margin-bottom: 44px;
+  }
+  main .technology__wrapper__links__link {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+  main .technology__wrapper__content {
+    text-align: center;
+    margin-right: 0;
+    max-width: 458px;
+  }
+  main .technology__wrapper__content__terminology {
+    margin-bottom: 16px;
+  }
+  main .technology__wrapper__content__title {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 16px;
+  }
+  main .technology__wrapper__content__text {
+    width: 458px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  main .technology__wrapper__img_tablet {
+    display: block;
+    margin-bottom: 56px;
+  }
+  main .technology__wrapper__img {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background: url("../../img/technology/background-technology-mobile.png") no-repeat center;
+  }
+  header {
+    margin-bottom: 24px;
+  }
+  main {
+    margin-bottom: 81px;
+  }
+  main .technology__title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  main .technology__wrapper__links {
+    margin-bottom: 26px;
+  }
+  main .technology__wrapper__links__link {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+  main .technology__wrapper__content {
+    max-width: 327px;
+  }
+  main .technology__wrapper__content__terminology {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    margin-bottom: 9px;
+  }
+  main .technology__wrapper__content__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  main .technology__wrapper__content__text {
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  main .technology__wrapper__img_tablet {
+    margin-bottom: 34px;
+    height: 170px;
+    object-fit: cover;
+  }
+}
