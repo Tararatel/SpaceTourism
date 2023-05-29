@@ -1,20 +1,22 @@
 .crew__wrapper__img {
-  margin-top: 48px;
+	margin-top: 48px;
 }
 
 @media (max-width: 768px) {
-  .crew__wrapper__img {
-    margin-top: 0;
-  }
-  .crew__wrapper__content__description {
-    width: 520px;
-  }
+	main {
+		.crew__wrapper__img {
+			margin-top: 0;
+		}
+		.crew__wrapper__content__description {
+			width: 520px;
+		}
+	}
 }
 @media (max-width: 375px) {
-  main {
-    margin-bottom: 79px;
-  }
-  main .crew__wrapper__content__description {
-    width: 327px;
-  }
+	main {
+		margin-bottom: 79px;
+	}
+	main .crew__wrapper__content__description {
+		width: 327px;
+	}
 }
