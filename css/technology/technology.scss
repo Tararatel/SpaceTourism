@@ -28,7 +28,8 @@ main {
 	}
 
 	.technology__wrapper {
-		@include flexCenter($alignItems);
+		@include flexSpaceBetween($alignItems);
+		margin-left: 165px;
 
 		&__img_tablet {
 			display: none;

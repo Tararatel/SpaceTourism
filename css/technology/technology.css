@@ -24,8 +24,9 @@ main .technology__title span {
 }
 main .technology__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-left: 165px;
 }
 main .technology__wrapper__img_tablet {
   display: none;
